@@ -141,6 +141,7 @@
           _actionResolve(defaultActionObj);
     		},
     		handle_action_text: function () {
+          console.log(this.action.text.sub_type)
     			if(!this.action.text.value) return;
           _handleAction(this.action.text.value);
     			_actionResolve({
